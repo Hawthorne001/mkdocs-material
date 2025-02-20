@@ -2,6 +2,140 @@
 
 ## Material for MkDocs
 
+### 9.6.5 <small>February 20, 2025</small> { id="9.6.5" }
+
+- Fixed #8016: Tags listing not showing when when file name has spaces
+- Fixed #8012: Privacy plugin crashes if HTTP download fails
+
+### 9.6.4 <small>February 12, 2025</small> { id="9.6.4" }
+
+- Fixed #7985: Blog content sometimes not stretching to full width
+- Fixed #7978: Navigation rendering bug in Safari 18.3
+
+### 9.6.3 <small>February 7, 2025</small> { id="9.6.3" }
+
+- Fixed rendering of arrow heads in Mermaid.js class diagrams
+- Fixed #7960: Tags plugin crashes on numeric metadata titles
+
+### 9.6.2 <small>February 3, 2025</small> { id="9.6.2" }
+
+- Fixed #7955: Excessively long words don't break on narrow screens
+- Fixed #7947: Scope setting interferes with outdated version banner
+
+### 9.6.1 <small>January 31, 2025</small> { id="9.6.1" }
+
+- Fixed #7943: Tags plugin crashing due to merge error
+
+### 9.6.0 <small>January 31, 2025</small> { id="9.6.0" }
+
+- Added meta plugin
+- Rewrite of the tags plugin
+- Added support for allow lists in tags plugin
+- Added support for and custom sorting in tags plugin
+- Added support for related links in blog plugin
+- Added support for custom index pages in blog plugin
+- Added support for navigation subtitles
+- Fixed #7924: Anchors might require two clicks when using instant navigation
+
+### 9.5.50 <small>January 18, 2025</small> { id="9.5.50" }
+
+- Fixed #7913: Social plugin renders attribute lists in page title
+
+### 9.5.49 <small>December 16, 2024</small> { id="9.5.49" }
+
+- Adjusted title color in dark mode for all supported Mermaid.js diagrams
+- Fixed #7803: Privacy plugin crashes on generated files
+- Fixed #7781: Mermaid.js flow chart title not visible in dark mode
+
+### 9.5.48 <small>December 8, 2024</small> { id="9.5.48" }
+
+- Fixed #7774: Disabling social cards doesn't work
+
+### 9.5.47 <small>December 1, 2024</small> { id="9.5.47" }
+
+- Fixed #7750: Numeric tags break search
+- Fixed #7748: Blog plugin breaks when using future drafts (9.5.45 regression)
+
+### 9.5.46 <small>November 25, 2024</small> { id="9.5.46" }
+
+- Added support for removing `preload` hints in privacy plugin
+- Fixed #7734: Code blocks in h5 headlines are uppercased
+- Fixed #7725: Blog plugin crashing on missing timezone (9.5.45 regression)
+
+### 9.5.45 <small>November 20, 2024</small> { id="9.5.45" }
+
+- Reduced size of Docker image through multi-stage build
+- Fixed #7708: Blog plugin crashing on YAML dates with timezones
+
+### 9.5.44 <small>November 5, 2024</small> { id="9.5.44" }
+
+- Fixed #7672: Font CSS 404's when using privacy plugin (9.5.43 regression)
+
+### 9.5.43 <small>October 31, 2024</small> { id="9.5.43" }
+
+- Added support for external images in SVGs in privacy plugin
+- Fixed #7651: Privacy plugin doesn't handle quoted URLs in CSS
+
+### 9.5.42 <small>October 20, 2024</small> { id="9.5.42" }
+
+- Fixed #7625: Invalid encoding of boolean attributes in privacy plugin
+- Fixed #7624: Crash when disabling privacy plugin (9.5.41 regression)
+
+### 9.5.41 <small>October 15, 2024</small> { id="9.5.41" }
+
+- Fixed #7619: Improved tooltip on logo disappears after instant navigation
+- Fixed #7616: Race condition in built-in privacy plugin when inlining assets
+- Fixed #7615: Comments and "Was this page helpful?" visible when printing
+
+### 9.5.40 <small>October 10, 2024</small> { id="9.5.40" }
+
+- Updated Latvian translations
+- Fixed #7597: Social cards not using site name on home page
+
+### 9.5.39 <small>September 29, 2024</small> { id="9.5.39" }
+
+- Fixed #7226: not staying on page when using mike's canonical versioning
+
+### 9.5.38 <small>September 26, 2024</small> { id="9.5.38" }
+
+- Added Albanian translations
+
+### 9.5.37 <small>September 25, 2024</small> { id="9.5.37" }
+
+- Added 4th and 5th level ordered list styles
+- Fixed #7548: Tags have no spacing in search
+
+### 9.5.36 <small>September 21, 2024</small> { id="9.5.36" }
+
+- Fixed #7544: Social cards incorrectly rendering HTML entities
+- Fixed #7542: Improved support for setting custom list styles
+
+### 9.5.35 <small>September 18, 2024</small> { id="9.5.35" }
+
+- Fixed #7498: Search not showing for Vietnamese language
+
+### 9.5.34 <small>August 31, 2024</small> { id="9.5.34" }
+
+- Updated Mermaid.js to version 11 (latest)
+
+### 9.5.33 <small>August 23, 2024</small> { id="9.5.33" }
+
+- Fixed #7453: Incorrect position of tooltip when sorting table
+
+### 9.5.32 <small>August 19, 2024</small> { id="9.5.32" }
+
+- Fixed RXSS vulnerability via deep link in search results
+- Added support for fetching latest release from GitLab
+
+### 9.5.31 <small>August 2, 2024</small> { id="9.5.31" }
+
+- Fixed #7405: DockerHub missing images > 9.5.27 due to change in Alpine/APK
+
+### 9.5.30 <small>July 23, 2024</small> { id="9.5.30" }
+
+- Fixed #7380: Navigation icons disappearing on hover in Safari
+- Fixed #7367: Blog readtime computation includes SVG text content
+
 ### 9.5.29 <small>July 14, 2024</small> { id="9.5.29" }
 
 - Updated Galician translations
@@ -703,7 +837,7 @@ __Fixes__
 
 ### 8.5.11 <small>November 30, 2022</small> { id="8.5.11" }
 
-- Let it snow, see https://twitter.com/squidfunk/status/1597939243090788352
+- Let it snow, see https://x.com/squidfunk/status/1597939243090788352
 
 ### 8.5.10 <small>November 11, 2022</small> { id="8.5.10" }
 

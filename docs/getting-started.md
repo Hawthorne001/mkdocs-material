@@ -68,10 +68,10 @@ install those packages separately.
 
 :fontawesome-brands-youtube:{ style="color: #EE0F0F" }
 __[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
-15m – Learn how to create and host a documentation site using Material for
+27m – Learn how to create and host a documentation site using Material for
 MkDocs on GitHub Pages in a step-by-step guide.
 
-  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
+  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=xlABhbnNrfI
 
 ---
 
@@ -121,6 +121,13 @@ The following plugins are bundled with the Docker image:
   [Docker image]: https://hub.docker.com/r/squidfunk/mkdocs-material/
   [mkdocs-minify-plugin]: https://github.com/byrnereese/mkdocs-minify-plugin
   [mkdocs-redirects]: https://github.com/datarobot/mkdocs-redirects
+
+???+ warning
+
+    The Docker container is intended for local previewing purposes only and
+    is not suitable for deployment. This is because the web server used by
+    MkDocs for live previews is not designed for production use and may have
+    security vulnerabilities.
 
 ??? question "How to add plugins to the Docker image?"
 

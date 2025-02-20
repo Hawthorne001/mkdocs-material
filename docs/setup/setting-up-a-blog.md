@@ -22,6 +22,7 @@ __Check out our [blog], which is created with the new [built-in blog plugin]!__
 <!-- md:version 9.2.0 -->
 <!-- md:plugin -->
 <!-- md:flag experimental -->
+<!-- md:demo create-blog -->
 
 The built-in blog plugin adds support for building a blog from a folder of
 posts, which are annotated with dates and other structured data. First, add the
@@ -72,7 +73,6 @@ We'll add more settings here, as we discover new use cases.
   [Insiders]: ../insiders/index.md
   [built-in blog plugin]: ../plugins/blog.md
   [built-in plugins]: ../insiders/getting-started.md#built-in-plugins
-  [docs_dir]: https://www.mkdocs.org/user-guide/configuration/#docs_dir
   [start writing your first post]: #writing-your-first-post
 
   [config.archive_pagination]: ../plugins/blog.md#config.archive_pagination
@@ -182,9 +182,11 @@ The following configuration options are supported:
     ```
 
 Material for MkDocs will automatically add the [necessary metadata] to your site
-which will make the RSS feed discoverable by browsers and feed readers. Note
-that the [RSS plugin][rss] comes with several other configuration options.
-For further information, see the [documentation].
+which will make the RSS feed discoverable by browsers and feed readers.
+
+The other configuration options of this extension are not officially supported
+by Material for MkDocs, which is why they may yield unexpected results. Use them
+at your own risk.
 
   [rss]: https://guts.github.io/mkdocs-rss-plugin/
   [categories]: ../plugins/blog.md#categories
@@ -192,7 +194,6 @@ For further information, see the [documentation].
   [comment system]: adding-a-comment-system.md
   [necessary metadata]: https://guts.github.io/mkdocs-rss-plugin/configuration/#integration
   [theme extension]: ../customization.md
-  [documentation]: https://guts.github.io/mkdocs-rss-plugin/configuration/
 
 ### Blog only
 
@@ -447,8 +448,7 @@ slug: hello-world
 
 #### Adding related links
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.23.0 -->
+<!-- md:version 9.6.0 -->
 <!-- md:flag experimental -->
 
 Related links offer the perfect way to prominently add a _further reading_
@@ -461,14 +461,14 @@ to add related links to a post:
 date: 2024-01-31
 links:
   - plugins/search.md
-  - insiders/index.md#how-to-become-a-sponsor
+  - insiders/how-to-sponsor.md
 ---
 
 # Hello world!
 ...
 ```
 
-You can use the exact same syntax as for the [`nav`][nav] section in
+You can use the exact same syntax as for the [`nav`][mkdocs.nav] section in
 `mkdocs.yml`, which means you can set explicit titles for links, add external
 links and even use nesting:
 
@@ -477,7 +477,7 @@ links and even use nesting:
 date: 2024-01-31
 links:
   - plugins/search.md
-  - insiders/index.md#how-to-become-a-sponsor
+  - insiders/how-to-sponsor.md
   - Nested section:
     - External link: https://example.com
     - setup/setting-up-site-search.md
@@ -488,14 +488,13 @@ links:
 ```
 
 If you look closely, you'll realize that you can even use an anchor to link to
-a specific section of a document, extending the possibilities of the [`nav`][nav]
-syntax in `mkdocs.yml`. The [built-in blog plugin] resolves the anchor and sets
-the title of the anchor as a [subtitle] of the related link.
+a specific section of a document, extending the possibilities of the
+[`nav`][mkdocs.nav] syntax in `mkdocs.yml`. The [built-in blog plugin] resolves
+the anchor and sets the title of the anchor as a [subtitle] of the related link.
 
-Note that all links must be relative to [`docs_dir`][docs_dir], as is also the
-case for the [`nav`][nav] setting.
+Note that all links must be relative to [`docs_dir`][mkdocs.docs_dir], as is
+also the case for the [`nav`][mkdocs.nav] setting.
 
-  [nav]: https://www.mkdocs.org/user-guide/configuration/#nav
   [subtitle]: ../reference/index.md#setting-the-page-subtitle
 
 #### Linking from and to posts
@@ -520,7 +519,7 @@ when the site is being built. Of course, you can also reference assets from
 posts outside of the `posts` directory. The [built-in blog plugin] ensures that
 all links are correct.
 
-#### Pinning a post :material-alert-decagram:{ .mdx-pulse title="Added on February 24, 2024" }
+#### Pinning a post
 
 <!-- md:sponsors -->
 <!-- md:version insiders-4.53.0 -->
@@ -572,8 +571,7 @@ This will disable automatic reading time computation.
 
 #### Setting defaults
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.21.0 -->
+<!-- md:version 9.6.0 -->
 <!-- md:plugin [meta][built-in meta plugin] – built-in -->
 <!-- md:flag experimental -->
 
@@ -623,9 +621,9 @@ values defined for a post, which means you can define common properties in
 ### Adding pages
 
 Besides posts, it's also possible to add static pages to your blog by listing
-the pages in the [`nav`][nav] section of `mkdocs.yml`. All generated indexes
-are included after the last specified page. For example, to add a page on the
-authors of the blog, add the following to `mkdocs.yml`:
+the pages in the [`nav`][mkdocs.nav] section of `mkdocs.yml`. All generated
+indexes are included after the last specified page. For example, to add a page
+on the authors of the blog, add the following to `mkdocs.yml`:
 
 ``` yaml
 nav:
@@ -639,8 +637,7 @@ nav:
 
 ### Custom index pages
 
-<!-- md:sponsors -->
-<!-- md:version insiders-4.24.0 -->
+<!-- md:version 9.6.0 -->
 <!-- md:flag experimental -->
 
 If you want to add custom content to automatically generated [archive] and

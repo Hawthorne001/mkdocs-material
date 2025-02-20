@@ -12,7 +12,7 @@ documentation, or new functionality you have developed.
     Before deciding to spend effort on making changes and creating a pull
     request, please discuss what you intend to do. If you are responding to
     what you think might be a bug, please issue a [bug report] first. If you
-    indend to work on documentation, create a [documentation issue]. If you
+    intend to work on documentation, create a [documentation issue]. If you
     want to work on a new feature, please create a [change request].
 
     Keep in mind the guidance given and let people advise you. It might be that
@@ -258,7 +258,7 @@ Please respect the [terms of the Insiders program] and the spirit of the
 Sponsorware approach used to maintain and develop Material for MkDocs.
 
 [the Insiders repository]: https://github.com/squidfunk/mkdocs-material-insiders/
-[terms of the Insiders program]: http://localhost:8000/mkdocs-material/insiders/faq/sponsoring/#licensing
+[terms of the Insiders program]: https://squidfunk.github.io/mkdocs-material/insiders/license/#fair-use-policy
 
 ### Setting up a development environment
 
